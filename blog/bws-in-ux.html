@@ -14,13 +14,23 @@
   <a class="visually-hidden-focusable" href="#main">Skip to content</a>
 
   <header role="banner">
-    <nav class="container" aria-label="Primary">
+    <!-- New mobile toggle button -->
+    <button class="nav-toggle"
+            data-toggle="menu"
+            aria-controls="site-nav"
+            aria-expanded="false">
+      Menu
+    </button>
+  
+    <!-- Existing nav, now with an ID -->
+    <nav id="site-nav" class="container" aria-label="Primary">
       <ul>
         <li><a href="../">Home</a></li>
         <li><a href="./">Blog</a></li>
       </ul>
     </nav>
   </header>
+
 
   <main id="main" class="section container">
     <article class="card" itemscope itemtype="https://schema.org/Article">
