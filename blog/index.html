@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blog — Parastoo Harati</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/style.css" rel="stylesheet">
+  <meta name="description" content="Articles on UX research, cognitive science, and practical methods.">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+
+  <header role="banner">
+    <nav class="container" aria-label="Primary">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../#work">Work</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a aria-current="page" href="./">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="section container">
+    <h1>Blog</h1>
+    <p>Short, practical notes from my research and UX practice.</p>
+
+    <section aria-labelledby="recent">
+      <h2 id="recent">Recent posts</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="bws-in-ux.html">Best–Worst Scaling for product decisions</a></h3>
+          <p>How to capture crisp trade-offs with less participant fatigue, plus templates you can adapt.</p>
+          <div class="tags">
+            <span class="tag">Methods</span><span class="tag">Quant</span>
+          </div>
+        </article>
+        <!-- Add more articles as you go -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="section section--soft" role="contentinfo">
+    <div class="container">
+      <p>© <span id="y"></span> Parastoo Harati</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
